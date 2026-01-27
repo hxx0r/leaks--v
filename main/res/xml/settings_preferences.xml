@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Категория VPN -->
+    <PreferenceCategory
+        android:title="VPN настройки"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            android:key="auto_start_vpn"
+            android:title="Автозапуск VPN"
+            android:summary="Автоматически запускать блокировщик при старте приложения"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
+            android:key="allow_bypass"
+            android:title="Разрешить обход"
+            android:summary="Разрешить некоторым приложениям обходить VPN"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+    <!-- Категория уведомлений -->
+    <PreferenceCategory
+        android:title="Уведомления"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            android:key="tracker_notifications"
+            android:title="Уведомления о трекерах"
+            android:summary="Показывать уведомления при блокировке трекеров"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
+            android:key="notification_sound"
+            android:title="Звук уведомлений"
+            android:summary="Проигрывать звук при блокировке трекера"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
+            android:key="vpn_status_notification"
+            android:title="Статус VPN"
+            android:summary="Показывать постоянное уведомление о работе VPN"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+    <!-- Категория обновлений -->
+    <PreferenceCategory
+        android:title="Обновления"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            android:key="auto_update_trackers"
+            android:title="Автообновление списка трекеров"
+            android:summary="Автоматически обновлять базу трекеров"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+
+        <ListPreference
+            android:key="update_frequency"
+            android:title="Частота обновлений"
+            android:summary="Как часто проверять обновления списка трекеров"
+            android:entries="@array/update_frequency_entries"
+            android:entryValues="@array/update_frequency_values"
+            android:defaultValue="daily"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+    <!-- Категория безопасности -->
+    <PreferenceCategory
+        android:title="Безопасность"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            android:key="block_all_ads"
+            android:title="Блокировать всю рекламу"
+            android:summary="Блокировать все рекламные запросы"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
+            android:key="block_analytics"
+            android:title="Блокировать аналитику"
+            android:summary="Блокировать аналитические трекеры"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
+            android:key="block_social"
+            android:title="Блокировать социальные трекеры"
+            android:summary="Блокировать трекеры социальных сетей"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+    <!-- Категория информации -->
+    <PreferenceCategory
+        android:title="Информация"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:key="app_version"
+            android:title="Версия приложения"
+            android:summary="1.0.0"
+            app:iconSpaceReserved="false" />
+
+        <Preference
+            android:key="trackers_count"
+            android:title="Трекеров в базе"
+            app:iconSpaceReserved="false" />
+
+        <Preference
+            android:key="blocked_count"
+            android:title="Всего заблокировано"
+            app:iconSpaceReserved="false" />
+
+        <Preference
+            android:key="privacy_policy"
+            android:title="Политика конфиденциальности"
+            app:iconSpaceReserved="false" />
+
+        <Preference
+            android:key="clear_logs"
+            android:title="Очистить логи трекеров"
+            android:summary="Удалить всю историю блокировок"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">leaks</string>
+    <string name="vpn_active">Защита активна</string>
+    <string name="vpn_inactive">Защита отключена</string>
+    <string name="start_vpn">Запустить защиту</string>
+    <string name="stop_vpn">Остановить защиту</string>
+    <string name="view_trackers">Трекеры</string>
+    <string name="scan_apps">Сканировать приложения</string>
+    <string name="trackers_found">Трекеров обнаружено: %d</string>
+    <string name="trackers_blocked">Трекеров заблокировано: %d</string>
+    <string name="no_trackers">Трекеры не обнаружены</string>
+    <string name="block_notification">Заблокирован доступ к %s</string>
+</resources>

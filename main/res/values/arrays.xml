@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="update_frequency_entries">
+        <item>Каждый час</item>
+        <item>Каждые 6 часов</item>
+        <item>Ежедневно</item>
+        <item>Еженедельно</item>
+        <item>Вручную</item>
+    </string-array>
+
+    <string-array name="update_frequency_values">
+        <item>hourly</item>
+        <item>six_hours</item>
+        <item>daily</item>
+        <item>weekly</item>
+        <item>manual</item>
+    </string-array>
+</resources>
