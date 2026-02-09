@@ -17,10 +17,14 @@ Run → Run 'app'
 
 
 # Запуск unit-тестов
-```./gradlew test```
+```
+./gradlew test
+```
 
 # Запуск instrumented-тестов
-```./gradlew connectedAndroidTest```
+```
+./gradlew connectedAndroidTest
+```
 
 В процессе
 
