@@ -5,7 +5,7 @@
 
 # 1. Клонировать репозиторий
 ```
-git clone https://github.com/yourusername/leaks--v.git
+git clone https://github.com/hxx0r/leaks--v.git
 ```
 # 2. Открыть в Android Studio
 File → Open → выбрать папку проекта
